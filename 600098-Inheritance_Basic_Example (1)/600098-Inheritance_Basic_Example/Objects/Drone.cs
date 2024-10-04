@@ -16,6 +16,11 @@ namespace OpenGL_Game.Objects
             
         }
 
+        public override void Close()
+        {
+
+        }
+
         public override void Update()
         {
             position += velocity * GameScene.dt;

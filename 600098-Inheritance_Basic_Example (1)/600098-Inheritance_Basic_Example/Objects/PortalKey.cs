@@ -14,6 +14,10 @@ namespace OpenGL_Game.Objects
         {
         }
 
+        public override void Close()
+        {
+
+        }
         public override void Update()
         {
 

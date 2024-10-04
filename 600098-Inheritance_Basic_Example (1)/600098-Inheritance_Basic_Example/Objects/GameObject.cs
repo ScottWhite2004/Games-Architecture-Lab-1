@@ -28,5 +28,8 @@ namespace OpenGL_Game.Objects
         }
 
         public abstract void Update();
+
+        public abstract void Close();
     }
+
 }

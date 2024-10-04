@@ -197,6 +197,10 @@ namespace OpenGL_Game.Scenes
         /// </summary>
         public override void Close()
         {
+            foreach (GameObject gameObject in objectList)
+            {
+                gameObject.Close();
+            }
             sceneManager.keyboardDownDelegate -= Keyboard_KeyDown;
             sceneManager.keyboardUpDelegate   -= Keyboard_KeyUp;
             ResourceManager.RemoveAllAssets();
